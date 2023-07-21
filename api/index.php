@@ -1,15 +1,11 @@
 <?php
 
-$tasks = [
-    ['goal' => 'Fare la spesa', 'status' => 'done'],
-    ['goal' => 'Studiare per l\'esame', 'status' => 'todo'],
-    ['goal' => 'Pulire la casa', 'status' => 'done'],
-    ['goal' => 'Preparare la cena', 'status' => 'todo'],
-    ['goal' => 'Fare esercizio fisico', 'status' => 'todo'],
-];
+$database_path = __DIR__ . '/../database/tasks.json';
 
-$tasks_json = json_encode($tasks);
+$json_data = file_get_contents($database_path);
+
+$tasks = json_decode($json_data);
 
 header('Content-Type: application/json');
 
-echo $tasks_json;
+echo json_encode($tasks);

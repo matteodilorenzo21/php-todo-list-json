@@ -1,0 +1,22 @@
+[
+    {
+        "goal": "Fare la spesa",
+        "status": "done"
+    },
+    {
+        "goal": "Studiare per l'esame",
+        "status": "todo"
+    },
+    {
+        "goal": "Pulire la casa",
+        "status": "done"
+    },
+    {
+        "goal": "Preparare la cena",
+        "status": "todo"
+    },
+    {
+        "goal": "Fare esercizio fisico",
+        "status": "todo"
+    }
+]
